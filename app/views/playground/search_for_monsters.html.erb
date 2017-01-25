@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="col-md-12">
+		<% @monsters.each do |monster| %>
+			<div class="col-md-12">
+				怪獸姓名：<%= monster.name %> 
+				怪獸種類：<%= monster.category %> 
+				怪獸等級：<%= monster.level %> 
+				怪獸介紹：<%= monster.info %>
+				<%= link_to '幹架' ,engage_path(character_id:@character.id,monster_id:monster.id),class:"btn btn-info" %>
+			</div>
+		<% end %>
+
+		<br>
+
+	</div>
+</div>

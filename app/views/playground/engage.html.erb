@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-md-12">
+		<%= @rounds_character_attack %> <br>
+		<%= @rounds_monster_attack %> <br>
+		結果：<%= @result %>
+	</div>
+
+	<!-- 角色狀態 -->
+	<div class="col-md-12">
+		<div class="col-md-12">
+			角色：<%= @character.name %>
+		</div>
+		<div class="col-md-12">
+			角色等級：<%= @character.level %>
+		</div>
+		<div class="col-md-12">
+			經驗值： <%= @character.exp %> / <%= @character.require_exp_for_level_up %>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<%= link_to '繼續找人幹架' ,search_for_monsters_path,class:"btn btn-info" %>
+	</div>
+</div>

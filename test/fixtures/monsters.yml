@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  attack: 1
+  hp: 1
+  level: 1
+  exp: 1
+  category: MyString
+  info: MyString
+
+two:
+  name: MyString
+  attack: 1
+  hp: 1
+  level: 1
+  exp: 1
+  category: MyString
+  info: MyString
